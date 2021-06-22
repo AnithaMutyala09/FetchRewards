@@ -1,0 +1,2 @@
+SELECT MAX(totalspent.ts) from (SELECT AVG(totalSpent) AS ts FROM receipts WHERE rewardsReceiptStatus='Finished' UNION SELECT AVG(totalSpent)  as ts FROM 
+receipts WHERE rewardsReceiptStatus='Rejected') AS totalspent;

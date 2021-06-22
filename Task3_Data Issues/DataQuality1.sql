@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM receipts_rewardsreceiptitemlist_object WHERE barcode IS null;
